@@ -11,6 +11,7 @@ function addDivs(){
     const parent = document.getElementById("mainBox")
     parent.appendChild(el)
     el.classList.add("child")
+    document.getElementById("mainBox").scrollBy(0,100)
     el.addEventListener('click',()=>{
         el.classList.add('scale-out-center')
         sum = sum + parseInt(el.innerHTML)
